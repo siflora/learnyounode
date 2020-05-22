@@ -1,8 +1,10 @@
-var array=process.argv.slice(2);
-var array1=array.map((value)=>{
-  return Number(value);
-}) 
-console.log(array1.reduce((acc, cur)=>{
-  return acc+cur;
-},0)
-)
+const array = process.argv;
+const sum = (arrary, i) =>
+ { var result = 0;
+   for (i=2; i<array.length; i++) {
+   result += Number(array[i])
+ }
+console.log(result)
+}
+
+sum()
